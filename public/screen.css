@@ -1,5 +1,6 @@
 :root {
   font: 16px / 1 sans-serif;
+  font-family: 'Varela Round', sans-serif;
 }
 
 html {
@@ -14,7 +15,12 @@ body {
 }
 
 h1 {
+  margin-top: 2rem;
   text-align: center;
+}
+
+.twoColor {
+  color: #ffddbb;
 }
 
 main {
@@ -26,10 +32,18 @@ main {
 
 article {
   margin: 1rem;
-  border: thin solid #7c7c7c;
+  border: thick solid #b9d9eb;
   border-radius: 1rem;
   min-width: fit-content;
   padding-top: 0;
+}
+
+.two {
+  border: thick solid #ffddbb !important;
+}
+
+.two p {
+  color: #ffddbb;
 }
 
 h2 {
@@ -38,9 +52,11 @@ h2 {
   color: #002244;
   margin-top: 0;
   width: 100%;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
   line-height: 3rem;
+}
+
+.two h2 {
+  background-color: #ffddbb;
 }
 
 p {
@@ -58,4 +74,10 @@ button {
   color: #b9d9eb;
   line-height: 1.5rem;
   border-radius: 1rem;
+  border-color: #b9d9eb;
+}
+
+.two button {
+  color: #ffddbb;
+  border-color: #ffddbb;
 }

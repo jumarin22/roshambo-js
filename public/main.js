@@ -111,29 +111,26 @@ function main() {
   }
 
   function showWinner() {
-    if (oneChoice === twoChoice) {
-      oneDisplay.textContent = draw
-      twoDisplay.textContent = draw
-    } else if (
-      (oneChoice === rock && (twoChoice === scissors || twoChoice == lizard)) ||
-      (oneChoice === paper && (twoChoice === rock || twoChoice == spock)) ||
-      (oneChoice === scissors &&
-        (twoChoice === paper || twoChoice === lizard)) ||
-      (oneChoice === lizard && (twoChoice === spock || twoChoice === paper)) ||
-      (oneChoice === spock && (twoChoice === scissors || twoChoice === rock))
-    ) {
-      oneDisplay.textContent = win
-      twoDisplay.textContent = lose
-    } else if (
-      (twoChoice === rock && (oneChoice === scissors || oneChoice == lizard)) ||
-      (twoChoice === paper && (oneChoice === rock || oneChoice == spock)) ||
-      (twoChoice === scissors &&
-        (oneChoice === paper || oneChoice === lizard)) ||
-      (twoChoice === lizard && (oneChoice === spock || oneChoice === paper)) ||
-      (twoChoice === spock && (oneChoice === scissors || oneChoice === rock))
-    ) {
-      oneDisplay.textContent = lose
-      twoDisplay.textContent = win
+    if (oneChoice != 'one' && twoChoice != 'two') {
+      if (oneChoice === twoChoice) {
+        oneDisplay.textContent = draw
+        twoDisplay.textContent = draw
+      } else if (
+        (oneChoice === rock &&
+          (twoChoice === scissors || twoChoice == lizard)) ||
+        (oneChoice === paper && (twoChoice === rock || twoChoice == spock)) ||
+        (oneChoice === scissors &&
+          (twoChoice === paper || twoChoice === lizard)) ||
+        (oneChoice === lizard &&
+          (twoChoice === spock || twoChoice === paper)) ||
+        (oneChoice === spock && (twoChoice === scissors || twoChoice === rock))
+      ) {
+        oneDisplay.textContent = win
+        twoDisplay.textContent = lose
+      } else {
+        oneDisplay.textContent = lose
+        twoDisplay.textContent = win
+      }
     }
   }
 }
