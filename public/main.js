@@ -67,27 +67,27 @@ function main() {
 
   const twoRock = document
     .querySelector('.two button.rock')
-    .addEventListener('click', picktwoRock)
+    .addEventListener('click', pickTwoRock)
 
-  function picktwoRock() {
+  function pickTwoRock() {
     twoChoice = rock
     showWinner()
   }
 
   const twoPaper = document
     .querySelector('.two button.paper')
-    .addEventListener('click', picktwoPaper)
+    .addEventListener('click', pickTwoPaper)
 
-  function picktwoPaper() {
+  function pickTwoPaper() {
     twoChoice = paper
     showWinner()
   }
 
   const twoScissors = document
     .querySelector('.two button.scissors')
-    .addEventListener('click', picktwoScissors)
+    .addEventListener('click', pickTwoScissors)
 
-  function picktwoScissors() {
+  function pickTwoScissors() {
     twoChoice = scissors
     showWinner()
   }
