@@ -1,3 +1,4 @@
-# Roshambo Js
+# Roshambo Js 
 
-![SDG](./docs/button.png)
+An implementation of Rock Paper Scissors (Lizard Spock) using JavaScript HTML DOM.
+
